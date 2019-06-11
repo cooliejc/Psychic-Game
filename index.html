@@ -15,7 +15,7 @@
     <div class="container">
         <!-- Jumbotron -->
         <div class="row">
-            <div class="jumbotron" class="col-md-6">
+            <div id="main" class="jumbotron" class="col-md-6">
                 <h1 class="display-3">Letter Guessing Game</h1>
                 <p class="lead">Guess the Computer's randomly chosen letter before you run out of tries</p>
                 <hr class="my-2">
@@ -51,7 +51,7 @@
 
                 <!-- Player input -->
                 <div class="input-group mb-3">
-                    <input id="playerInput" type="text" class="form-control" placeholder="Guess a letter">
+                    <input id="playerInput" type="text" class="form-control" maxlength="1" placeholder="Guess a letter">
                 </div>
 
                 <!-- Display guessed letters -->
@@ -62,8 +62,9 @@
                 <hr class="my-2">
 
                 <!-- Play button -->
-                <a class="lead">
+                <a id="buttonSocket" class="lead">
                     <a id="play" class="btn btn-primary btn-lg" href="#!" role="button">Play</a>
+                    <a id="playAgain" class="btn btn-primary btn-lg" href="#!" role="button">Play Again</a>
                 </a>
 
             </div>
