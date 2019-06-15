@@ -75,7 +75,7 @@ var checkGuess = function () {
     if (playerGuess.indexOf(computerGuess) > -1) {
         $("#play").hide();
         $("#playAgain").show();
-        $("#playerInput").attr("placeholder", "You guessed the Computer's letter!");
+        $("#playerInput").attr("placeholder", "You guessed the Computer's letter! It was " + computerGuess);
         $("#playerInput").prop('disabled', true);
         wins++;
         $("#winsCard").text(wins);
